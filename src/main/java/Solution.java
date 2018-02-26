@@ -1,16 +1,20 @@
+import org.junit.Test;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
+import static org.junit.Assert.assertArrayEquals;
+
 class TreeNode {
-  int val;
-  TreeNode left;
-  TreeNode right;
-  TreeNode(int x) { val = x; }
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode(int x) { val = x; }
 }
 
-class Solution {
+public class Solution {
 
     public List<Integer> largestValues(TreeNode root) {
         List<Integer> result = new ArrayList<>();
@@ -36,7 +40,7 @@ class Solution {
     }
 
     @Test
-    public static  void main(String[] args) {
+    public void test() {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2);
         root.right = new TreeNode(3);
@@ -46,6 +50,9 @@ class Solution {
 
         root.right.right = new TreeNode(9);
 
-        System.out.println(new Solution().largestValues(root));
+        List<Integer> resultList  = new Solution().largestValues(root);
+        Integer[] result = new Integer[resultList.size()];
+        resultList.toArray(result);
+        assertArrayEquals(new Integer[]{1, 3, 9},result);
     }
 }
