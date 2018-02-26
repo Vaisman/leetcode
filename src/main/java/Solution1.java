@@ -65,8 +65,8 @@ public class Solution1 {
 
         root.right.right = new TreeNode(9);
 
-        List<Integer> resultList  = new Solution1().largestValuesBFS(root);
-        List<Integer> resultListRec  = new Solution1().largestValuesDFS(root);
+        List<Integer> resultList  = largestValuesBFS(root);
+        List<Integer> resultListRec  = largestValuesDFS(root);
 
         Integer[] result = new Integer[resultList.size()];
 
