@@ -30,5 +30,4 @@ public class Solution3 {
 
         assertEquals(1, findTilt(root));
     }
-
 }
