@@ -4,27 +4,23 @@ import static org.junit.Assert.*;
 
 public class Solution29 {
 
-    public int minMoves(int[] nums) {
-        if (nums.length == 0)
-            return 0;
+  public int minMoves(int[] nums) {
+    if (nums.length == 0) return 0;
 
-        int min = nums[0];
+    int min = nums[0];
 
-        for (int n : nums)
-            min = Math.min(min, n);
+    for (int n : nums) min = Math.min(min, n);
 
-        int res = 0;
+    int res = 0;
 
-        for (int n : nums)
-            res += n - min;
+    for (int n : nums) res += n - min;
 
-        return res;
-    }
+    return res;
+  }
 
-    @Test
-    public void test() {
+  @Test
+  public void test() {
 
-        assertEquals(3, minMoves(new int[]{1,2,3}));
-
-    }
+    assertEquals(3, minMoves(new int[] {1, 2, 3}));
+  }
 }

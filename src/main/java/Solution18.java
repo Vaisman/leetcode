@@ -14,13 +14,13 @@ You want to go on a trip every day during your vacation. Moreover, you want to v
 
 For example, consider array A such that:
 
-A[0] = 7 
-A[1] = 3  
-A[2] = 7  
-A[3] = 3  
-A[4] = 1  
-A[5] = 3 
-A[6] = 4  
+A[0] = 7
+A[1] = 3
+A[2] = 7
+A[3] = 3
+A[4] = 1
+A[5] = 3
+A[6] = 4
 A[7] = 1
 Travel Agency offers trips to four different locations (identified by numbers 1, 3, 4 and 7). The shortest vacation starting on day 0 that allows you to visit all these locations ends on day 6 (thus is seven days long). However, a shorter vacation of five days (starting on day 2 and ending on day 6) also permits you to visit all locations. On every vacation shorter than five days, you will have to miss at least one location.
 
@@ -43,32 +43,32 @@ expected worst-case time complexity is O(N); expected worst-case space complexit
 
 public class Solution18 {
 
-    public int solution(int[] A) {
-        Set<Integer> freq = new HashSet<>();
+  public int solution(int[] A) {
+    Set<Integer> freq = new HashSet<>();
 
-        for (int i : A) {
-            freq.add(i);
-        }
-
-        for(int i = 0; i < A.length; i++) {
-            freq.remove(A[i]);
-            if (freq.size() == 0) {
-                return i;
-            }
-        }
-
-        return A.length - 1;
+    for (int i : A) {
+      freq.add(i);
     }
 
-    @Test
-    public void test() {
-        int [] n = new int[] {7,3,7,3,1,3,4,1};
-        assertEquals(6, solution(n));
-
-        int [] n1 = new int[] {2 , 1, 1, 3, 2, 1, 1, 3};
-        assertEquals(6, solution(n));
-
-        int [] n2 = new int[] {1,1,1,1,1,1,1,1};
-        assertEquals(6, solution(n));
+    for (int i = 0; i < A.length; i++) {
+      freq.remove(A[i]);
+      if (freq.size() == 0) {
+        return i;
+      }
     }
+
+    return A.length - 1;
+  }
+
+  @Test
+  public void test() {
+    int[] n = new int[] {7, 3, 7, 3, 1, 3, 4, 1};
+    assertEquals(6, solution(n));
+
+    int[] n1 = new int[] {2, 1, 1, 3, 2, 1, 1, 3};
+    assertEquals(6, solution(n));
+
+    int[] n2 = new int[] {1, 1, 1, 1, 1, 1, 1, 1};
+    assertEquals(6, solution(n));
+  }
 }
