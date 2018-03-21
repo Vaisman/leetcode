@@ -6,27 +6,34 @@ import java.util.List;
 import java.util.Map;
 
 public class Solution65 {
-  private Map<String, Integer> count;
   private List<TreeNode> ans;
+  private Map<String, Integer> trees;
+  private Map<Integer, Integer> count;
+  int t;
 
   public List<TreeNode> findDuplicateSubtrees(TreeNode root) {
     count = new HashMap();
+    trees = new HashMap<>();
     ans = new ArrayList();
-    collect(root);
+    t = 1;
+    lookup(root);
     return ans;
   }
 
-  private String collect(TreeNode node) {
-    if (node == null) return "#";
+  public int lookup(TreeNode node) {
+    if (node == null) {
+      return 0;
+    }
 
-    String serial = node.val + "," + collect(node.left) + "," + collect(node.right);
-    count.put(serial, count.getOrDefault(serial, 0) + 1);
+    String serial = node.val + "," + lookup(node.left) + "," + lookup(node.right);
+    int uid = trees.computeIfAbsent(serial, x -> t++);
+    count.put(uid, count.getOrDefault(uid, 0) + 1);
 
-    if (count.get(serial) == 2) {
+    if (count.get(uid) == 2) {
       ans.add(node);
     }
 
-    return serial;
+    return uid;
   }
 
   @Test
