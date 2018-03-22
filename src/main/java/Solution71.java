@@ -10,7 +10,8 @@ public class Solution71 {
     if (pattern == null || pattern.isEmpty()) return false;
     if (str == null || str.isEmpty()) return false;
 
-    Map<String, Integer> map = new HashMap<>();
+    Map<String, Integer> map1 = new HashMap<>();
+    Map<String, Integer> map2 = new HashMap<>();
 
     String[] splitted = str.split(" ");
     if (pattern.length() != splitted.length) {
@@ -18,7 +19,7 @@ public class Solution71 {
     }
 
     for (int i = 0; i < pattern.length(); i++) {
-      if (!Objects.equals(map.put(String.valueOf(pattern.charAt(i)), i), map.put(splitted[i], i)))
+      if (!Objects.equals(map1.put(String.valueOf(pattern.charAt(i)), i), map2.put(splitted[i], i)))
         return false;
     }
     return true;
@@ -30,5 +31,6 @@ public class Solution71 {
     assertEquals(wordPattern("abba", "dog cat cat fish"), false);
     assertEquals(wordPattern("aaaa", "dog cat cat dog"), false);
     assertEquals(wordPattern("abba", "dog dog dog dog"), false);
+    assertEquals(wordPattern("abc", "b c a"), true);
   }
 }
