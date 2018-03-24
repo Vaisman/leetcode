@@ -1,5 +1,6 @@
 package zero;
 
+import common.TreeNode;
 import junit.framework.TestCase;
 import org.junit.Test;
 

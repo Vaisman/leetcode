@@ -1,5 +1,7 @@
 package zero;
 
+import common.TreeNode;
+
 public class Solution55 {
   public TreeNode deleteNode(TreeNode root, int key) {
     if (root == null) {

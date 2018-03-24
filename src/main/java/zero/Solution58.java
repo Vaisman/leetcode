@@ -1,5 +1,7 @@
 package zero;
 
+import common.ListNode;
+import common.TreeNode;
 import org.junit.Test;
 
 public class Solution58 {
