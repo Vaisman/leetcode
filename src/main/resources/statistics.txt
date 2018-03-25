@@ -26,8 +26,9 @@ Done with help:
   125 - isLetterOrDigit
   101 - rec and non rec (exit condition)
   160 169 171 172 198 110 190 202 118 121
-  783 687 717 696
-  38 - need repeat
+  783 687 717 783
+  696 !
+  38 !
 
 
  medium
