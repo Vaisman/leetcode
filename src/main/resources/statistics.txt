@@ -1,9 +1,8 @@
 Solved:
 
 2018:
-
 Mar
-24 - 21,
+ 24 - 21,
 
 Apr
 May
@@ -21,27 +20,37 @@ Feb
 Mar
 
 Done with help:
-21 - iterator
-35 - see constrain
-125 - isLetterOrDigit
-101 - rec and non rec (exit condition)
-160 169 171 198 110
+ easy
+  21 - iterator
+  35 - see constrain
+  125 - isLetterOrDigit
+  101 - rec and non rec (exit condition)
+  160 169 171 172 198 110 190 202 118 121
+  783 687 717 696
+  38 - need repeat
+
+
+ medium
+ hard
+
 
 Repeat:
-easy - 50
-medium - 20
-hard - 10
+ easy - 50
+ medium - 20
+ hard - 10
 
 
 Behaviour:
-https://www.youtube.com/watch?v=PJKYqLP6MRE
+ https://www.youtube.com/watch?v=PJKYqLP6MRE
 
 
-Design
-https://www.youtube.com/watch?v=ZgdS0EUmn70
-Features:
-Estimation:
-Design Goals:
-Skeleton of the design:
-Deep Dive:
-Optimization:
+Design:
+ https://www.youtube.com/watch?v=ZgdS0EUmn70
+
+Design pattern:
+ Features:
+ Estimation:
+ Design Goals:
+ Skeleton of the design:
+ Deep Dive:
+ Optimization:
