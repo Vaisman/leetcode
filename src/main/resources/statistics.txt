@@ -28,10 +28,13 @@ Done with help:
   226 - bfs
   235 - point on value
   268 - use index
-  160 169 171 172 198 110 190 202 118 121
-  783 687 717 783 438 219
-  696 !
+  405 - shift 4 and array
+  401 - bits count function, t - constraint
   38 !
+  696 !
+  448 !
+  160 169 171 172 198 110 190 202 118 121
+  783 687 717 783 438 219 371 501 455
 
 
  medium
