@@ -25,8 +25,11 @@ Done with help:
   35 - see constrain
   125 - isLetterOrDigit
   101 - rec and non rec (exit condition)
+  226 - bfs
+  235 - point on value
+  268 - use index
   160 169 171 172 198 110 190 202 118 121
-  783 687 717 783 438
+  783 687 717 783 438 219
   696 !
   38 !
 
