@@ -39,6 +39,12 @@ Done with help:
 
  medium
   94 - stack
+  89 - x ^ x >> 1
+  73 - const memory
+  62 - non recursion !
+  39 - remove
+  2 - leading zero, non rec
+  22 46
 
  hard
 
