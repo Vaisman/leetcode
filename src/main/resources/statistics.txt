@@ -38,6 +38,8 @@ Done with help:
 
 
  medium
+  94 - stack
+
  hard
 
 
