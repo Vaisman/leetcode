@@ -44,7 +44,8 @@ Done with help:
   62 - non recursion !
   39 - remove
   2 - leading zero, non rec
-  22 46
+  15 - corner 3, need write, sort !
+  22 46 91
 
  hard
 
