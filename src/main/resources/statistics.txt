@@ -45,7 +45,9 @@ Done with help:
   39 - remove
   2 - leading zero, non rec
   15 - corner 3, need write, sort !
-  22 46 91
+  338 - non rec
+  22 46 91 96!
+
 
  hard
   218!
