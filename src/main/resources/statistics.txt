@@ -25,13 +25,28 @@ Done with help:
   35 - see constrain
   125 - isLetterOrDigit
   101 - rec and non rec (exit condition)
-  160 169 171 172 198 110 190 202 118 121
-  783 687 717 783
-  696 !
+  226 - bfs
+  235 - point on value
+  268 - use index
+  405 - shift 4 and array
+  401 - bits count function, t - constraint
   38 !
+  696 !
+  448 !
+  160 169 171 172 198 110 190 202 118 121
+  783 687 717 783 438 219 371 501 455
 
 
  medium
+  94 - stack
+  89 - x ^ x >> 1
+  73 - const memory
+  62 - non recursion !
+  39 - remove
+  2 - leading zero, non rec
+  15 - corner 3, need write, sort !
+  22 46 91
+
  hard
   218!
 
