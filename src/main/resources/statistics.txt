@@ -47,7 +47,8 @@ Done with help:
   15 - corner 3, need write, sort !
   338 - non rec
   22 46 91 96!
-
+  337! - [r, not r]
+  216 - remove
 
  hard
   218!
