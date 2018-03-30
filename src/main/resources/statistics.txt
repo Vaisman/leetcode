@@ -49,6 +49,7 @@ Done with help:
   22 46 91 96!
   337! - [r, not r]
   216 - remove
+  331 - dif calculation
 
  hard
   218!
