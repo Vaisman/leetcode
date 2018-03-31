@@ -53,6 +53,7 @@ Done with help:
   449 - deserialize (all in q)
   451 - need write
   150 - stack
+  287 - dfs
 
  hard
   218!
