@@ -54,6 +54,7 @@ Done with help:
   451 - need write
   150 - stack
   287 - dfs
+  260 - small bit a & -a
 
  hard
   218!
