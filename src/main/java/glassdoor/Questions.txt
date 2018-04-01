@@ -344,3 +344,10 @@
 - How do you process a set of log files if you don't have enough memory to do it?
 
 - What is 2^12
+
+- Find the last digit of the nth Fibonacci number
+
+- Program a recursive solution to invert a binary tree
+
+- Implement top view of trees.
+
