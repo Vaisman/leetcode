@@ -351,3 +351,77 @@
 
 - Implement top view of trees.
 
+- Given a series of flight departures and arrivals, what was the maximum number of flights in the air at any one time?
+
+- Given a set of strings, output equivalence classes of anagrams.
+
+- Given a set of strings, output equivalence classes of by-character rotations.
+
+- Design a class that takes a runnable object, and runs it at a particular time.
+
+- Display all the numbers from 0 to 1000000. All the digits of a displayed number should be different.
+
+- How do you find if a linked list has a loop?
+
+- Average case time complexity of a merge sort
+
+- Implement itoa(int n)
+
+- Develop an algorithm for level generation in a game similar to Candy Crush.
+
+- Suppose that you have a sorted array of integers (positive or negative). You want to apply a function of the
+  form f(x) = a * x^2 + b * x + c to each element x of the array such that the resulting array is still sorted.
+  Implement this in Java or C++. The input are the initial sorted array and the function parameters (a, b and c)
+
+- Computation of Hamming distance. Build a stack structures with some operations.
+
+- Find the shortest distance between two points in a 2D grid world (bfs).
+
+- Given n coordinate points x, y find the line that intersects most of them.
+
+- Use code to generate an maze and how to can make sure the maze generated has solution.
+
+- Had to check if a Sudoku puzzle was valid and a computer graphics problem
+
+- Given an iterator of Integers, create an iterator that will work correctly only iterating even integers.
+  Ex given an iterator that iterates 1, 2, 3, 4, 5, the iterator should iterate 2, 4
+
+- Longest increasing path in 2d array
+
+- Write a java method to count how many 1's are contained in a binary representation of a number.
+
+- covert an array to a binary tree.
+
+- How would you reverse just the vowels in a string?
+
+- Give an approximation of 2 power 26
+
+- Finding all combinations of well-formed brackets
+
+- Max-min agent, binary searching, R-trie,
+
+- Average Complexity of Quicksort Algorithm
+
+- Find a start of a cycle in a linked list with constant space.
+
+- Given a 'friendship' graph, how would you generate friend suggestions for people, and how would you distribute
+  the data across machines?
+
+- Solving a problem that reduced to TSP.
+
+- Implement a thread-safe LRU cache
+
+- How would you calculate the number of 1's in a list of 10,000 integers?
+
+- Implement the BigNum's increment method for integers.
+
+- Create a graph class and graph traversal algorithms.
+
+- How would you implement an LRU cache?
+
+- implement dijkstras algorithm
+
+- How to reverse a tree
+
+- Find if there are two members of an array that sum to 10 (10 and 0 count, but 10 alone does not).
+
