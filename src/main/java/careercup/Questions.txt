@@ -1,1 +1,33 @@
+- DP Problem. Given the length and width of a matrix, get the number of paths from bottom-left to bottom right.
+  You may only walk into those 3 directions ➡ (right) ↗ (upper-right) ↘ (lower-right) at each point.
+  Follow-up: optimize 2d DP to 1d DP of linear extra space.
+  Follow-up: what if some cells are blocked
+  Availability test/debug on distributed system. Discussed and drafted about failover, replication, NoSQL etc.
+  Interviewer seemed to be expecting more but time ran out.
+
+- Print all numbers satisfying the expression 2^i * 5^i (where i, j are integers i &gt;= 0 and j &gt;= 0) in
+  increasing order up to a given bound N.
+  2^i stands for power(2, i).
+
+- check if there are two subarrays in an array are identical
+
+- comparison of two strings if they are the same, use o(1) space
+  abc \ b is equal to ab
+  abc \ ca equals abcA
+  \ b = backspace
+  \ c = CapsLock
+
+- convert Prefix to Postfix using recursion
+  + * A B / C D  -&gt;  A B * C D / +
+
+- convert a Sorted linkedList to complete BST
+
+- Given list of edge in the graph, find the number of reversed pairs,(1,2)
+  and (2,1) are such pair. Follow up: How to implement the distributed version.
+
+- To several bus lines, each line is a two-way line, such as:
+  0: A &lt;-&gt; B &lt;-&gt; D
+  1: C &lt;-&gt; D
+  give you a start and end, find the path through the least station. followup
+  Asked the least transfer case
 
