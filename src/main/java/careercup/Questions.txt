@@ -31,3 +31,105 @@
   give you a start and end, find the path through the least station. followup
   Asked the least transfer case
 
+- Determine whether the inorder of n binary trees is the same
+
+- Give you a csv file There are three columns are id, parent, weight Then give you a class
+  Node which has these three fields
+  But you also have the option of adding more fields for you to print out all the node's subwebs.
+  The definition of subweight is the sum of the node's weight plus the subweight of his children.
+
+- Give a chessboard, check if a group of white chesses are surrounded by all black chesses.
+
+- Given a list of relationship of report
+  A reported to D, D reported to Z, who are reported to Z
+
+-Decompress string - string (s) followed by {n} denotes s repeating n times
+ "a(b(c){2}){2}d" decompresses to "abccbccd"
+ "((x){3}(y){2}z){2}" decompresses to "xxxyyzxxxyyz"
+
+- how to check is a small matrix appear in a big matrix
+  boolean isSubmatrix(int[][] small, int[][] big)
+
+- Data structure for Task Dependency
+  A task can start only after all its pre-requisites are done
+  Code the methods addTask(preRequisiteTask, dependentTask)
+  getExecutionSequence()
+
+
+- Input is an integer array A
+  Return an array B such that B[i] = product of all elements of A except A[i]
+
+
+- Given any uppercase string. Report the starting index at which any valid permutation of
+  ABCDEF starts. If not found, then report -1.
+  Possible permutations of ABCDEF are ABCDFE, BCDAFE, FEDCAB etc (a total of 6! = 720 permutations)
+
+
+- Find the sum of all nodes stored in a tree
+
+- Convert an integer to base-3 equivalent
+
+
+- Given two strings - S1 and S2.
+  Arrange the characters of S1 in same alphabetical order as the characters of S2.
+  If a character of S1 is not present in S2 - such characters should come at the end of
+  the result string, but make sure to retain the order of such characters
+  Case sensitivity is irrelevant
+  e.g. S1 = "Google", S2 = "dog"
+  Output = "ooggle"
+  e.g. S1 = "abcdedadf", S2 = "cae"
+  Output = "caaebdddf"
+
+- A sequence of strings, printed first by column, on a screen of width K,
+  Requires the first column of the same column by column alignment,
+  At least one character interval between columns and columns,
+  Ask how many lines at least?
+  The string sequence is {"abc", "de", "fghij", "k", "lmno", "p"}
+  The screen width is 10
+  The answer is at least 3 lines
+  abc k
+  de lmno
+  fghij p
+
+- Give a decimal number, such as 123. Asking a total of smaller num than 123 made up by 1 and 0 composed of
+  decimal numbers.
+  111, 110, 101, 100, 11, 10, 1, 0.
+
+- To a word, and a map, map which is a word, ask this if a word is smash able? That is, you can smash one letter
+  each time, and the rest of the letters can form a single word (the new word is still in the map) until it is
+  completely hit.
+  For example: sprint -&gt; print -&gt; pint -&gt; pit -&gt; it -&gt; i -&gt; ""
+
+- Minimum number of swaps of chars in only one string to make two strings the same
+
+- Given an array {a0, a1, a2, ... an, b0, b1, b2 ... bn},
+  Rearrange this array into {a0, b0, a1, b1, a2, b2, ... an, bn}
+  inplace, O (1) space
+
+
+- Suppose there is a map with N bikes on it and now we have N individuals,
+  Design an algorithm so that everyone can get the bike in the shortest distance
+
+- Give you a bunch of light bulbs. Can flip a range of open change off, turn off open, and then asked to do so k times
+  later, just ask you a light bulb is turned on or turned off, how to do
+
+- Give a  string [] words,
+  Find the shortest string [] containing the keyword inside.
+  words: sky cloud google search sky work blue
+  keywords: sky blue
+  return: sky work blue
+
+- Given an array, find the number of   tuple such that A [i] + A [j] + A [k] = A [l] in an array,
+  here i j k l.
+
+- Given one string s1, and then insert one char into this string at any place, to get s2, find the inserted char
+  Could you do it in logn time
+
+- Give a weighted n-nary tree and find the longest path from the root node to the leaf node
+    class Node {
+    int id;
+    // connected node id, edge weight
+     Integer, Integer&gt; edges;
+    }
+
+- Given a binary matrix, count the number of square that can be formed by all 0s
