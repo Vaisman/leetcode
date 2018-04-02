@@ -3,9 +3,11 @@ Solved:
 2018:
 Mar
  24 - 21,
- 31 - 447 t = O(n), s = O(1)
+ 31 - 382, 447 t = O(n), s = O(1)
 
 Apr
+ 1 -
+
 May
 June
 July
