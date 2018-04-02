@@ -1,3 +1,7 @@
+Phone:
+- google doc template with solution/samples/tests
+
+On cite:
 - plugin for google doc
 - fresh marker
 - water
