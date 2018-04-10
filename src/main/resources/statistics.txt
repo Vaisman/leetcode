@@ -10,8 +10,9 @@ Apr
  2 - 382
  4 - 3 (n), 5 (n2)
  5 - 11, 17 array mapping, rec, iter, 19
- 6 - 33, 34, 48(carefull with steps), 56
+ 6 - 33, 34, 48(careful with steps), 56
  8 - 142
+ 10 - 200
 
 May
 June
