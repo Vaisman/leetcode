@@ -13,6 +13,7 @@ Apr
  6 - 33, 34, 48(careful with steps), 56
  8 - 142
  10 - 200
+ 18 - 322!!
 
 May
 June
