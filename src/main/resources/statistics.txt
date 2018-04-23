@@ -15,7 +15,7 @@ Apr
  10 - 200
  18 - 322!!, 647 Expand Around Center, mention Manchester
  20 - 31, 49
- 23 - 55 (top-down and bottom-up good example), 64 (O(n) memory)
+ 23 - 55 (top-down and bottom-up good example), 64 (O(n) memory), 78
 
 May
 June
@@ -76,10 +76,11 @@ Repeat:
  medium - 20
  hard - 10
 
+Backtracking general
+https://leetcode.com/problems/subsets/discuss/27281/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)
 
 Behaviour:
  https://www.youtube.com/watch?v=PJKYqLP6MRE
-
 
 Design:
  https://www.youtube.com/watch?v=ZgdS0EUmn70
