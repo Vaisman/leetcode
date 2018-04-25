@@ -16,8 +16,8 @@ Apr
  18 - 322!!, 647 Expand Around Center, mention Manchester
  20 - 31, 49
  23 - 55 (top-down and bottom-up good example), 64 (O(n) memory), 78, 79, 105! (rec + it!!!)
- 24 - 139, 215(Quick sort repeat), 621!!
-
+ 24 - 139, 215(Quick sort repeat), 621!!, 494
+ 25 - 416 (bottom-up!)
 
 May
 June
@@ -53,7 +53,7 @@ Done with help:
 
  medium
   94 - stack
-  89 - x ^ x >> 1
+  89 - x ^ x >> 1 (gray code)
   73 - const memory
   62 - non recursion !
   39 - remove
