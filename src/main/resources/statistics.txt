@@ -20,7 +20,7 @@ Apr
  25 - 416 (bottom-up!), 34 (rec and stack)
 
 May
- 02 - 394, 309
+ 02 - 394, 309, 300 (dp with binary search)
 
 June
 July
