@@ -17,9 +17,11 @@ Apr
  20 - 31, 49
  23 - 55 (top-down and bottom-up good example), 64 (O(n) memory), 78, 79, 105! (rec + it!!!)
  24 - 139, 215(Quick sort repeat), 621!!, 494
- 25 - 416 (bottom-up!)
+ 25 - 416 (bottom-up!), 34 (rec and stack)
 
 May
+ 02 - 394, 309
+
 June
 July
 Aug
