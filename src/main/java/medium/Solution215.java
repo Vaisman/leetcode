@@ -7,67 +7,37 @@ import static org.junit.Assert.assertEquals;
 public class Solution215 {
 
   public int findKthLargest(int[] nums, int k) {
-    return select(nums, k - 1);
+    if (nums == null || nums.length == 0) return Integer.MAX_VALUE;
+    return findKthLargest(nums, 0, nums.length - 1, nums.length - k);
   }
 
-  // Quick select
-  private int select(int[] nums, int k) {
+  public int findKthLargest(int[] nums, int start, int end, int k) { // quick select: kth smallest
+    if (start > end) return Integer.MAX_VALUE;
 
-    int left = 0, right = nums.length - 1;
+    int pivot = nums[end]; // Take A[end] as the pivot,
 
-    while (true) {
-      if (left == right) {
-        return nums[left];
-      }
+    int left = start;
 
-      int pivotIndex = medianOf3(nums, left, right);
-      pivotIndex = partition(nums, left, right, pivotIndex);
+    for (int i = start; i < end; i++) {
+      if (nums[i] <= pivot) // Put numbers < pivot to pivot's left
+      swap(nums, left++, i);
+    }
 
-      if (pivotIndex == k) {
-        return nums[k];
-      } else if (pivotIndex > k) {
-        right = pivotIndex - 1;
-      } else {
-        left = pivotIndex + 1;
-      }
+    swap(nums, left, end); // Finally, swap A[end] with A[left]
+
+    if (left == k) { // Found kth smallest number
+      return nums[left];
+    } else if (left < k) { // Check right part
+      return findKthLargest(nums, left + 1, end, k);
+    } else { // Check left part
+      return findKthLargest(nums, start, left - 1, k);
     }
   }
 
-  // Use median-of-three strategy to choose pivot
-  private int medianOf3(int[] nums, int left, int right) {
-    int mid = left + (right - left) / 2;
-    if (nums[right] > nums[left]) {
-      swap(nums, left, right);
-    }
-    if (nums[right] > nums[mid]) {
-      swap(nums, right, mid);
-    }
-    if (nums[mid] > nums[left]) {
-      swap(nums, left, mid);
-    }
-    return mid;
-  }
-
-  private int partition(int[] nums, int left, int right, int pivotIndex) {
-    int pivotValue = nums[pivotIndex];
-
-    swap(nums, pivotIndex, right);
-
-    int index = left;
-    for (int i = left; i < right; ++i) {
-      if (nums[i] > pivotValue) {
-        swap(nums, index, i);
-        ++index;
-      }
-    }
-    swap(nums, right, index);
-    return index;
-  }
-
-  private void swap(int[] nums, int a, int b) {
-    int temp = nums[a];
-    nums[a] = nums[b];
-    nums[b] = temp;
+  void swap(int[] A, int i, int j) {
+    int tmp = A[i];
+    A[i] = A[j];
+    A[j] = tmp;
   }
 
   @Test
@@ -75,3 +45,24 @@ public class Solution215 {
     assertEquals(findKthLargest(new int[] {3, 2, 1, 5, 6, 4}, 2), 5);
   }
 }
+
+
+/*
+    // Returns the k-th smallest element of list within left..right inclusive
+    // (i.e. left <= k <= right).
+    // The search space within the array is changing for each round - but the list
+    // is still the same size. Thus, k does not need to be updated with each round.
+    function select(list, left, right, k)
+     if left = right        // If the list contains only one element,
+             return list[left]  // return that element
+             pivotIndex  := ...     // select a pivotIndex between left and right,
+             // e.g., left + floor(rand() % (right - left + 1))
+             pivotIndex  := partition(list, left, right, pivotIndex)
+             // The pivot is in its final sorted position
+             if k = pivotIndex
+             return list[k]
+             else if k < pivotIndex
+         return select(list, left, pivotIndex - 1, k)
+                 else
+                 return select(list, pivotIndex + 1, right, k)
+*/
