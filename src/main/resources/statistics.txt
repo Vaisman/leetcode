@@ -22,9 +22,10 @@ Apr
 May
  02 - 394, 309, 300 (dp with binary search)
  03 - 406, 215, 148(merge sort)
- 04 - 240, 221 (dp O(n))
+ 04 - 240, 221 (dp O(n) !), 279!
  09 - 53 (dp)
-
+ 10 -
+ 
 June
 July
 Aug
