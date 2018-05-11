@@ -24,8 +24,9 @@ May
  03 - 406, 215, 148(merge sort)
  04 - 240, 221 (dp O(n) !), 279!
  09 - 53 (dp)
- 10 - 322!! - the same like 297!, 152, 560
- 
+ 10 - 322!! - the same like 297!, 152, 560, 621
+ 11 - 814
+
 June
 July
 Aug
