@@ -1,0 +1,40 @@
+May  - LeetCode
+
+June - LeetCode
+
+July - Kormen
+       Design
+
+Aug  - LeetCode
+
+Sep  - LeetCode
+
+Oct  - LeetCode
+
+Nov  - LeetCode
+
+Dec - Multithreading 1w
+      Local java interview
+      LuxSoft
+      CreackCodeInterview 1w
+      109 questions 1w
+
+Jan - Algorithms interview
+      Uber, Grab, TomTom, Spotify, Fitbit..
+      KOW1
+
+Feb - Test interview
+      Test interview(Sema, Larisa..)
+      Yandex
+      KOW2
+
+Mar - Send CV
+      2 weeks 4h
+      2 weeks vacation
+      KOW3
+
+Apr - phone interview
+      vacation till OnCite
+      KOW4
+
+May - on cite, may be in ca
