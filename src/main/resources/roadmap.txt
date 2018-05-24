@@ -1,11 +1,14 @@
 May  - LeetCode
 
 June - LeetCode
+         payable simple
 
 July - Kormen
        Design
 
 Aug  - LeetCode
+         repeat simple
+         repeat medium
 
 Sep  - LeetCode
 
