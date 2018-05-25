@@ -24,8 +24,26 @@ public class Solution540 {
     return nums[lo];
   }
 
+  public int singleNonDuplicate1(int[] nums) {
+    if (nums == null || nums.length == 0 || nums.length % 2 == 0) return 0;
+
+    if (nums.length == 1) return nums[0];
+
+    for (int i = 0; i <= nums.length - 1; i += 2) {
+      if (i == nums.length-1) return nums[i];
+
+      if (nums[i] == nums[i + 1]) {
+        continue;
+      } else {
+        return nums[i];
+      }
+    }
+    return 0;
+  }
+
   @Test
   public void test() {
-    assertEquals(singleNonDuplicate(new int[] {1, 1, 2, 3, 3, 4, 4, 8, 8}), 2);
+    assertEquals(singleNonDuplicate1(new int[] {1, 1, 2, 3, 3, 4, 4, 8, 8}), 2);
+    assertEquals(singleNonDuplicate1(new int[] {1, 1, 2}), 2);
   }
 }
