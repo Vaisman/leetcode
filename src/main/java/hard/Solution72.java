@@ -1,4 +1,4 @@
-package medium;
+package hard;
 
 import org.junit.Test;
 
