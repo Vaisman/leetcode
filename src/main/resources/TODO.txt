@@ -7,3 +7,6 @@ On cite:
 - water
 
 - Describe yourself and what you did
+
+
+int[] hash = new int[255];  // hash
