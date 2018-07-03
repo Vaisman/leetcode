@@ -13,3 +13,9 @@ int[] hash = new int[255];  // hash
 
 if (x==null || y==null)
    return x==y;
+
+count.put(x, count.getOrDefault(x, 0) + 1);
+
+Collections.max(count.values());
+
+for (int x: count.keySet())
