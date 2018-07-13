@@ -1,5 +1,8 @@
 Phone:
 - google doc template with solution/samples/tests
+  Tools -> Preference, uncheck all the boxes.
+  Change the font to Consolas (optional;personal preference)
+  Tab in two symbols
 
 On cite:
 - plugin for google doc
