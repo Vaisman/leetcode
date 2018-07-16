@@ -1,3 +1,7 @@
+Question:
+- goole doc formating
+- mock interview
+
 Phone:
 - google doc template with solution/samples/tests
   Tools -> Preference, uncheck all the boxes.
