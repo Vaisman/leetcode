@@ -29,6 +29,18 @@ public class Solution646 {
     return dp[pairs.length - 1];
   }
 
+  public int findLongestChain1(int[][] pairs) {
+    int res = 0;
+    Arrays.sort(pairs, (a, b) -> a[1] - b[1]);
+    int cur = Integer.MIN_VALUE, ans = 0;
+    for (int[] pair : pairs)
+      if (cur < pair[0]) {
+        cur = pair[1];
+        res++;
+      }
+    return res;
+  }
+
   @Test
   public void test() {
     assertEquals(findLongestChain(new int[][] {{1, 2}, {2, 3}, {3, 4}}), 2);
