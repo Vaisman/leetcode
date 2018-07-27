@@ -50,6 +50,7 @@ July
  03 - 22!(bt)
  16 - 652!
  17 - 646(dp)
+ 27 - 842!(backtrack)
 
 Aug
 Sep
