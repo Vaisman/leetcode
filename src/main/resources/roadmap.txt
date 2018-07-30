@@ -21,6 +21,8 @@ Dec - Multithreading 1w
       LuxSoft
       CreackCodeInterview 1w
       109 questions 1w
+      Test interview
+      Intern
 
 Jan - Algorithms interview
       Uber, Grab, TomTom, Spotify, Fitbit..
