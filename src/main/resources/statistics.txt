@@ -53,6 +53,8 @@ July
  27 - 842!(backtrack), 397, 318, 187, 145
 
 Aug
+ 15 - 884
+
 Sep
 Oct
 Nov
