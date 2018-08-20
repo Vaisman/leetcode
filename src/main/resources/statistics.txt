@@ -129,3 +129,8 @@ Design pattern:
  Skeleton of the design:
  Deep Dive:
  Optimization:
+
+
+!REPEAT!
+276. Paint Fence https://www.youtube.com/watch?v=deh7UpSRaEY
+TernarySearch
