@@ -135,3 +135,5 @@ Design pattern:
 !REPEAT!
 276. Paint Fence https://www.youtube.com/watch?v=deh7UpSRaEY
 TernarySearch
+606. Construct String from Binary Tree
+
