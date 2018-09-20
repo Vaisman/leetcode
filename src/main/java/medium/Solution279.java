@@ -14,6 +14,7 @@ public class Solution279 {
 
     for (int i = 1; i <= n; i++) {
       for (int j = 1; j * j <= i; j++) {
+        System.out.println("i="+i +"  j=" + j + " dp=" + dp[i]);
         dp[i] = Math.min(dp[i], dp[i - j * j] + 1);
       }
     }

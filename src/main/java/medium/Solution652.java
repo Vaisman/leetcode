@@ -25,7 +25,7 @@ public class Solution652 {
     if (node == null) return "#";
 
     String serial = node.val + "," + collect(node.left) + "," + collect(node.right);
-      System.out.println("node ="+  node.val);
+    System.out.println("node ="+  node.val);
     System.out.println(serial);
     count.put(serial, count.getOrDefault(serial, 0) + 1);
 

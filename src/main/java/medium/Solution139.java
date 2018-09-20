@@ -2,37 +2,31 @@ package medium;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 
 public class Solution139 {
-  public boolean wordBreak(String s, List<String> wordDict) {
-    Set<String> set = new HashSet<>(wordDict);
-    return wordBreak(s, set);
-  }
-
-  public boolean wordBreak(String s, Set<String> wordDict) {
-    if (s == null && wordDict == null) return true;
-    if (s == null || wordDict == null) return false;
-
-    boolean[] dp = new boolean[s.length() + 1];
-    dp[0] = true;
-
-    for (int i = 1; i <= s.length(); i++) {
-      for (int j = 0; j < i; j++) {
-        String s1 = s.substring(j, i);
-        if (dp[j] && wordDict.contains(s1)) {
-          dp[i] = true;
-          break;
+  boolean wordBreak(String s, List<String> wordDict) {
+    Set<String> wordDictSet = new HashSet(wordDict);
+    Queue<Integer> queue = new LinkedList<>();
+    int[] visited = new int[s.length()];
+    queue.add(0);
+    while (!queue.isEmpty()) {
+      int start = queue.remove();
+      if (visited[start] == 0) {
+        for (int end = start + 1; end <= s.length(); end++) {
+          if (wordDictSet.contains(s.substring(start, end))) {
+            queue.add(end);
+            if (end == s.length()) {
+              return true;
+            }
+          }
         }
+        visited[start] = 1;
       }
     }
-
-    return dp[s.length()];
+    return false;
   }
 
   @Test

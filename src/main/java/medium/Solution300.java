@@ -49,6 +49,9 @@ public class Solution300 {
 
   @Test
   public void test() {
+    // dp[i] = max(dp[j])
+    // LIS = max(dp[i])
+
     assertEquals(lengthOfLIS(new int[] {10, 9, 2, 5, 3, 7, 101, 18}), 4);
     assertEquals(lengthOfLISDP(new int[] {10, 9, 2, 5, 3, 7, 101, 18}), 4);
   }
