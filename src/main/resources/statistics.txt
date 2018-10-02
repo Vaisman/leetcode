@@ -66,7 +66,7 @@ Sep
  27 - 806, 496!! stack, 846
 
 Oct
- 02 - 486, 701, 723(sliding window)
+ 02 - 486, 701, 723(sliding window), 348, 863
 
 Nov
 Dec
