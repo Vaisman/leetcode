@@ -6,18 +6,10 @@ public class Solution277 {
   }
 
   public int findCelebrity(int n) {
-    int candidate = 0;
-
-    for (int i = 1; i < n; i++) {
-      if (knows(candidate, i)) candidate = i;
-    }
-
-    for (int i = 0; i < n; i++) {
-      if (i != candidate &&
-              (knows(candidate, i) || !knows(i, candidate)))
-          return -1;
-    }
-
-    return candidate;
+      int x = 0;
+      for (int i = 0; i < n; ++i) if (knows(x, i)) x = i;
+      for (int i = 0; i < x; ++i) if (knows(x, i)) return -1;
+      for (int i = 0; i < n; ++i) if (!knows(i, x)) return -1;
+      return x;
   }
 }
