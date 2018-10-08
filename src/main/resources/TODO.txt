@@ -42,3 +42,5 @@ for (int x = Math.max(i - 1, 0); x <= Math.min(i + 1, m - 1); x++) {
  |
  |     stack.push(num);
  | }
+
+clear last bit (x & -x)
