@@ -71,7 +71,7 @@ Oct
  04 - 524, 835, 853
  08 - 343(dp)
  09 - 714, 120(dp), 413(dp), 712(dp), 357(dp), 377(dp)
- 10 - 76 (sliding window)
+ 10 - 76 (sliding window), 32
 
 Nov
 Dec
