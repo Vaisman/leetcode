@@ -1,8 +1,8 @@
 package medium;
 
-import common.TreeNode;
 
 public class Solution872 {
+    /*
   private void dfs(TreeNode root, StringBuilder sb) {
     if (root == null) return;
 
@@ -19,4 +19,5 @@ public class Solution872 {
     dfs(root2, sb2);
     return sb1.toString().equals(sb2.toString());
   }
+  */
 }
