@@ -75,7 +75,7 @@ Oct
  11 - 312(dp), 207(topological sort) !!, 153, 735
  12 - 249, 137, 360, 533, 807
  17 - 921
- 19 - 366. 370
+ 19 - 366, 370, 841
 
 Nov
 Dec
@@ -84,6 +84,8 @@ Dec
 Jan
 Feb
 Mar
+Apr
+May
 
 Done with help:
  easy
