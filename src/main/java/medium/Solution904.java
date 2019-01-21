@@ -2,41 +2,31 @@ package medium;
 
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.junit.Assert.assertEquals;
 
 public class Solution904 {
     public int totalFruit(int[] tree) {
-        int fruitA = -1;
-        int fruitB = -1;
-        int countOfA = 0;
-        int countOfAB = 0;
-        int max = 0;
-
-        for (int fruit : tree) {
-            if (fruit == fruitA || fruit == fruitB) {
-                countOfAB++;
+        Map<Integer, Integer> count = new HashMap<>();
+        int res = 0, i = 0;
+        for (int j = 0; j < tree.length; ++j) {
+            count.put(tree[j], count.getOrDefault(tree[j], 0) + 1);
+            while (count.size() > 2) {
+                count.put(tree[i], count.get(tree[i]) - 1);
+                if (count.get(tree[i]) == 0) {
+                    count.remove(tree[i]);
+                }
+                i++;
             }
-            else {
-                countOfAB = countOfA + 1;
-            }
-
-            if (fruit == fruitA) {
-                countOfA++;
-            }
-            else { // fruitB
-                fruitB = fruitA;
-                fruitA = fruit;
-                countOfA = 1;
-            }
-
-            max = Math.max(max, countOfAB);
+            res = Math.max(res, j - i + 1);
         }
-
-        return max;
+        return res;
     }
 
     @Test
     public void test() {
-        assertEquals(5 , totalFruit(new int[]{ 0, 1, 2, 2, 2, 1}));
+        assertEquals(5 , totalFruit(new int[]{  1, 0, 0, 2, 2, 2, 1}));
     }
 }
