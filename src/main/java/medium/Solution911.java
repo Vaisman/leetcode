@@ -1,13 +1,8 @@
 package medium;
 
-import org.junit.Test;
-
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
-
-import static org.junit.Assert.assertEquals;
 
 public class Solution911 {
 
@@ -33,11 +28,5 @@ public class Solution911 {
 
     public int q(int t) {
         return timeWinnerMap.get(timeWinnerMap.floorKey(t));
-    }
-
-    @Test
-    public void test() {
-        Solution911 s = new Solution911(new int[]{}, new int[]{});
-        assertEquals(s.q(1), 1);
     }
 }
