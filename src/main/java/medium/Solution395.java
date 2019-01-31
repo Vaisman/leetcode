@@ -1,5 +1,9 @@
 package medium;
 
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
 public class Solution395 {
     public int longestSubstring(String s, int k) {
         return helper(s.toCharArray(), 0, s.length(), k);
@@ -15,12 +19,14 @@ public class Solution395 {
 
         for (int i = l; i < r; i++) {
             if (map[ch[i] - 'a'] < k) {
-                int j = i + 1;
-                while (j < r && map[ch[j] - 'a'] < k)
-                    j++;
-                return Math.max(helper(ch, l, i, k), helper(ch, j, r, k));
+                return Math.max(helper(ch, l, i, k), helper(ch, i+1, r, k));
             }
         }
         return r - l;
+    }
+
+    @Test
+    public void longestSubstringTest() {
+        assertEquals(longestSubstring("ababbc", 2), 5);
     }
 }
